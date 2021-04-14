@@ -18,7 +18,7 @@ function getCoronaRepos(){
 }
 function output(arr,id){
     body = document.getElementById(id)
-    removeAllChildNodes(body)
+    //removeAllChildNodes(body)
     for(let i=0;i<arr.length;i++){
         let row  = document.createElement("DIV")
         row.className='row full-width cust-height border'
