@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>githubapibooststrap</title>
+</head>
+<body>
+    <style>
+        *{text-align:center;box-sizing: border-box;}
+        #covid-repos,#corona-repos{overflow:hidden;}
+        img{height:50px;width:50px;}
+        .full-width{width:100%; overflow: auto;}
+        .cust-height{height: 80px;}
+    </style>
+    <div class='container'>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12 border">
+                <h4>COVID Repos</h4>
+                <div id='covid-repos' class="row border">
+                    <div class="col"><strong>Name</strong></div>
+                    <div class="col"><strong>Desc</strong></div>
+                    <div class="col"><strong>Owner</strong></div>
+                    <div class="col"><strong>PFP</strong></div>
+                </div>
+                <button class="btn btn-primary"onclick="getCovidRepos()">Refresh</button>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 border">
+                <h4>Corona Repos</h4>
+                <div id='corona-repos' class="row border">
+                    <div class="col"><strong>Name</strong></div>
+                    <div class="col"><strong>Desc</strong></div>
+                    <div class="col"><strong>Owner</strong></div>
+                    <div class="col"><strong>PFP</strong></div>
+                </div>
+                <button class="btn btn-primary"onclick="getCoronaRepos()">Refresh</button>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
