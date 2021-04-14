@@ -21,8 +21,8 @@ function output(arr,id){
     //removeAllChildNodes(body)
     for(let i=0;i<arr.length;i++){
         let row  = document.createElement("DIV")
-        row.className='row full-width cust-height border'
-        
+        row.className='row full-width cust-height border align-items-center'
+
         let name = document.createElement('DIV'); name.className='col'; name.innerHTML= arr[i].name
         let desc = document.createElement('DIV'); desc.className='col'; 
         desc.innerHTML= arr[i].description.length<20? arr[i].description: arr[i].description.slice(0,21)+'...'
